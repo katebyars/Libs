@@ -7,79 +7,79 @@
         android:layout_height="match_parent"
         android:id="@+id/imageView"
         android:src="@drawable/fill"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/noun1"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="A noun"
+        android:layout_below="@+id/location2"
         android:layout_centerHorizontal="true" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/location2"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="A location"
+        android:layout_below="@+id/object1"
         android:layout_centerHorizontal="true" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/object1"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="An object"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/object2"
+        android:layout_alignRight="@+id/location2"
+        android:layout_alignEnd="@+id/location2" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/object2"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
-        android:hint="Another object"
-        android:layout_centerHorizontal="true" />
+        android:hint="An object"
+        android:layout_below="@+id/adjective1"
+        android:layout_alignRight="@+id/largeflatobject"
+        android:layout_alignEnd="@+id/largeflatobject" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/adjective1"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="An adjective"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/actionword1"
+        android:layout_alignLeft="@+id/location2"
+        android:layout_alignStart="@+id/location2" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/actionword1"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="An verb"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/largeflatobject"
+        android:layout_alignLeft="@+id/noun1"
+        android:layout_alignStart="@+id/noun1" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/largeflatobject"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="A large flat object"
+        android:layout_below="@+id/kindofdwelling"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -87,10 +87,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/kindofdwelling"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="A kind of dwelling place"
+        android:layout_below="@+id/bodypart"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -98,45 +97,44 @@
         android:layout_height="wrap_content"
         android:id="@+id/bodypart"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="A body part"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/occupation"
+        android:layout_alignRight="@+id/adjective1"
+        android:layout_alignEnd="@+id/adjective1" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/occupation"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="An occupation"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/food1"
+        android:layout_alignRight="@+id/bodypart"
+        android:layout_alignEnd="@+id/bodypart" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/food1"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="A food item"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/food2"
+        android:layout_alignLeft="@+id/bodypart"
+        android:layout_alignStart="@+id/bodypart" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/food2"
         android:background="@color/primary"
-        android:layout_above="@+id/createStoryButton"
-        android:layout_marginBottom="10dp"
         android:padding="5dp"
-        android:hint="Another food item"
-        android:layout_centerHorizontal="true" />
-
+        android:hint="A food item"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/food1"
+        android:layout_alignStart="@+id/food1" />
 
     <Button
         android:layout_width="match_parent"

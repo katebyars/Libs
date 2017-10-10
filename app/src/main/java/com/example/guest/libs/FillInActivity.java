@@ -19,12 +19,15 @@ public class FillInActivity extends AppCompatActivity {
         mNoun1 = (EditText) findViewById(R.id.noun1);
         mCreateStoryButton = (Button) findViewById(R.id.createStoryButton);
 
-
-        @Override
-        public void onClick(View v){
-            String noun1 = mNoun1.getText().toString();
-            Log.d("This is noun one: ", noun1);
-            Intent intent = new Intent(FillInActivity.this, StoryActivity.class);
-        }
-    });
- }
+        mCreateStoryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String noun1 = mNoun1.getText().toString();
+                Log.d("This is noun one: ", noun1);
+                Intent intent = new Intent(FillInActivity.this, StoryActivity.class);
+                intent.putExtra("noun1", noun1);
+                startActivity(intent);
+            }
+        });
+    }
+}

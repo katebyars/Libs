@@ -67,7 +67,7 @@
         android:id="@+id/actionword1"
         android:background="@color/primary"
         android:padding="5dp"
-        android:hint="An verb"
+        android:hint="A noun having to do with eating"
         android:layout_below="@+id/largeflatobject"
         android:layout_alignLeft="@+id/noun1"
         android:layout_alignStart="@+id/noun1" />
